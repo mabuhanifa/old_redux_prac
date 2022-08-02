@@ -10,7 +10,7 @@ const initialState = {
   error: null,
 };
 
-const todoReducer = (state = initialState, action) => {
+export const todoReducer = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case TODO_REQUEST:
